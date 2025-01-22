@@ -1,4 +1,5 @@
 version: "3.8"
+
 services:
   prometheus:
     image: prom/prometheus:latest
@@ -29,7 +30,7 @@ services:
       - monitoring
 
   nodejs_app:
-    build: .
+    build: ./nodejs_app
     container_name: nodejs_app
     ports:
       - "8000:8000"
