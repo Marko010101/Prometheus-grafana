@@ -29,7 +29,7 @@ services:
       - monitoring
 
   nodejs_app:
-    build: ./nodejs_app # Assuming you have a Dockerfile for your Node.js app
+    build: .
     container_name: nodejs_app
     ports:
       - "8000:8000"
